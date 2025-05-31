@@ -38,7 +38,7 @@ Page({
             const historyLogRes = await this.getStorage();
             await wx.setStorage({
                 key: "historyLog",
-                data: [{ timer: res.timer, text: res.trans_result }, ...historyLogRes]
+                data: [{ timer: res.timer, text: res.trans_result }, ...historyLogRes].filter(e => e.timer && e.text)
             })
             this.setData({ translateRes: res.trans_result })
 
