@@ -1,0 +1,78 @@
+/**index.wxss**/
+.translateContainer {
+    box-sizing: border-box;
+    /* padding: 0 18rpx; */
+    font-size: 25rpx;
+    width: 100%;
+    height: 500rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.translateContainer .selectLan .targetLan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: #f7f9f9;
+}
+
+.selectLan .lanList {
+    height: 0rpx;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 80rpx;
+    box-sizing: border-box;
+    background-color: #f7f9f9;
+    width: 100%;
+    z-index: 999;
+    transition: all .3s;
+}
+
+.selectLan {
+    position: relative;
+    padding: 0 18rpx;
+    background-color: #f7f9f9;
+}
+
+.translateContainer textarea {
+    margin-top: 15rpx;
+    width: 100%;
+    height: calc(100% - 15rpx - 80rpx);
+    box-sizing: border-box;
+    padding: 8rpx 20rpx;
+}
+
+.lanList .lanListItem {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1rpx solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18rpx;
+}
+
+.lanList .active {
+    background-color: #5499c7;
+    color: #fff;
+}
+
+.lanList .active .iconfont {
+    color: #fff;
+}
+
+.selectLan .selectVisible {
+    height: 520rpx;
+    opacity: 1;
+    transition: all .3s;
+}
+
+
+.resContainer {
+    height: 800rpx;
+    box-sizing: border-box;
+    padding: 18rpx;
+    font-size: 24rpx;
+    color: #7b8080;
+}

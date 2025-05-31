@@ -1,0 +1,41 @@
+/* pages/history/history.wxss */
+.logsContainer {
+    font-size: 25rpx;
+    box-sizing: border-box;
+    padding: 0 18rpx;
+}
+
+.logItem {
+    max-height: 200rpx;
+    margin-bottom: 30rpx;
+    border-bottom: 1rpx solid #ccc;
+}
+
+.logItem .timer {
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.logItem .text {
+    max-height: 100rpx;
+    text-indent: 45rpx;
+}
+
+.clearHistory {
+    font-size: 25rpx;
+    padding: 0 18rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    display: flex;
+    justify-content:  flex-end;
+    color: #5499c7;
+    align-items: center;
+}
+
+.iconfont {
+    color: #5499c7;
+    font-size: 25rpx;
+    line-height: 50rpx;
+    margin-left: 8rpx;
+    margin-top: 4rpx;
+}

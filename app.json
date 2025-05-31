@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "翻译",
+    "navigationBarBackgroundColor": "#5499c7"
+  },
+  "tabBar": {
+      "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "翻译",
+            "iconPath": "/public/translate.png",
+            "selectedIconPath": "/public/translate-select.png"
+        },
+        {
+            "pagePath": "pages/history/history",
+            "text": "历史记录",
+            "iconPath": "/public/history.png",
+            "selectedIconPath": "/public/history-select.png"
+        }
+      ],
+      "color": "#212f3d",
+      "selectedColor": "#5499c7",
+      "borderStyle": "black",
+      "backgroundColor": "#f7f9f9",
+      "position": "bottom"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

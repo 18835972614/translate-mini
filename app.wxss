@@ -1,0 +1,5 @@
+@import "/iconfonts/iconfonts.wxss";
+
+.iconfont {
+    color: #4a4a4a;
+}

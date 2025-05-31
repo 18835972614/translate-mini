@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="translateContainer">
+    <view class="selectLan">
+        <view class="targetLan" bind:tap="selectLanHandle">
+            <view>target language：{{active.label}}</view>
+            <view>切换语言</view>
+        </view>
+        <scroll-view class="lanList {{selectLanVisible && 'selectVisible'}}" scroll-y>
+            <view
+                wx:for="{{enableLanguages}}"
+                class="lanListItem {{active.value === item.value && 'active'}}"
+                wx:key="value"
+                data-value="{{item.value}}"
+                bind:tap="selectOnChange"
+            >
+                {{item.label}}
+                <view wx:if="{{active.value === item.value}}" class="iconfont icon-zhengque"></view>
+            </view>
+        </scroll-view>
+    </view>
+    <textarea 
+        placeholder="请输入要翻译的内容..." 
+        bindblur="textareaOnBlur"
+        model:value="{{lanValue}}"
+        maxlength="130"
+    />
+</view>
+<scroll-view class="resContainer" scroll-y bind:tap="resClick">
+    {{translateRes}}
+</scroll-view>

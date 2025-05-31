@@ -1,0 +1,11 @@
+<!--pages/history/history.wxml-->
+<view class="clearHistory" bind:tap="clearHistory">
+    clearHistory
+    <text class="iconfont icon-qingkong"></text>
+</view>
+<view scroll-y class="logsContainer">
+    <view wx:for="{{logs}}" wx:key="timer" class="logItem">
+        <view class="timer">{{item.timer}}</view>
+        <scroll-view scroll-y class="text">{{item.text}}</scroll-view>
+    </view>
+</view>
